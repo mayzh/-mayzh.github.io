@@ -4,9 +4,40 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <img id="snoop" src="snoopy.gif">
+  <h1 id = "heading">let's play tic tac toe.</h1>
+  <button type = "button" id="playerbtn" onclick="setPlayers(1)">One Player</button>
+  <div id = "btndivider"></div>
+  <button type = "button" id="computerbtn" onclick="setPlayers(2)">Two Player</button>
+  <table class = "hidden">
+    <tr id="frow">
+      <td id="00"></td>
+      <td id="01"></td>
+      <td id="02"></td>
+    </tr>
+    <tr id="srow">
+      <td id="10"></td>
+      <td id="11"></td>
+      <td id="12"></td>
+    </tr>
+    <tr id="trow">
+      <td id="20"></td>
+      <td id="21"></td>
+      <td id="22"></td>
+    </tr>
+
+  </table>
+  <div id = "winnerpic"></div>
+  <div id = "errortxt" class = "hidden">nope.<br>try again.</div>
+  <div id = "winnertxt" class = "hidden">wins.</div>
+  <div id = "drawtxt" class = "hidden">draw.</div>
+  <button type = "button" class = "hidden" id="resetbtn" onclick="location.reload()">start over.</button>
 </body>
+
+<script type="text/javascript" src = "jquery.js"></script>
+<script type="text/javascript" src = "script.js"></script>
 </html>
